@@ -1,0 +1,104 @@
+*
+	margin: 0
+	padding: 0  
+
+
+body
+	background: #e6e6e6 
+
+/*---Header----*/
+
+header
+	width: 90% //*sirve para el diseño adaptable*/ 
+	max-width: 1000px //*tamaño maximo*/ 
+	margin: 20px auto //*20px arriba y abajo y auto para centrarlo*/  
+	nav
+		background: #56D754 
+		overflow: hidden //*limpia el float-left que molesta en el contenedor*/ 
+		ul 
+			list-style: none //*para quitar los puntitos de las listas*/
+			li
+				float: left //*para apilar a la izquierda el menu*/ 
+				a
+					padding: 10px 20px //20px para los lados*/
+					display: block //es para tener un padding arriba y abajo*/  
+					color: #fff
+					text-decoration: none //*para quitar sobrayado*/  
+					&:hover
+						background: #4AB649
+						span
+							margin-right: 10px   
+						 
+
+
+.menu_bar 
+	display: none  
+
+
+@media screen and(max-width: 800px) 
+	header 
+		nav 
+			width: 80%
+			height: 100%
+			left: -100% 
+			margin: 0
+			padding: fixed 
+			ul 
+				li
+					display: block
+					float: none
+					border-bottom: 1px solid rgba(255,255,255, .3) 
+	
+
+	.menu_bar 
+		display: block
+		width: 100%
+		background: #ccc 
+		.bt-menu 
+			display: block
+			padding: 20px 
+			background: #024959 
+			color: white
+			text-decoration: none
+			font-weight: bold
+			font-size: 25px
+			-webkit-box-sizing: border-box
+			-moz-box-sizing: border-box
+			box-sizing: border-box   
+			span 
+				float: right
+				font-size: 40px  
+		
+
+
+.main 
+	width: 90% //*sirve para el diseño adaptable*/ 
+	max-width: 1000px //*tamaño maximo*/ 
+	margin: 20px auto //*20px arriba y abajo y auto para centrarlo*/
+	.articles
+		width: 68.5% //*ancho de nuestros articulos*/
+		margin-right: 1.5% //*cuando agregamos margen hay que quitarle width para completar el %*/ 
+		float: left
+		article
+			padding: 20px
+			background: #fff
+			margin-bottom: 20px //*margen externo para separar los articulos*/   
+
+
+aside
+	width: 30%
+	background: #ff8000
+	float: left   
+	padding: 20px //*el margen se hizo mas grande y se desplaza hacia abajo*/ 
+	box-sizing: border-box //*esto arregla el magen del padding*/ 
+
+
+footer
+	width: 90% //*sirve para el diseño adaptable*/ 
+	max-width: 1000px //*tamaño maximo*/ 
+	margin: 20px auto //*20px arriba y abajo y auto para centrarlo*/
+	background: #000 
+	color: #fff 
+	clear: both //*limpia los float-left anteriores que afectan y da un salto de linea automatico*/
+	padding: 10px 0px //*10px arriba y abajo y 0 a los lados*/
+	text-align: center
